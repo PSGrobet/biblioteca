@@ -1,0 +1,150 @@
+body{
+  padding: 2em 2em;
+  color: #222222;
+}
+h1,h2 {
+  max-width: 600px;
+  margin: 2em auto 1em auto;
+  padding-bottom: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #606060;
+  letter-spacing: 2px;
+  font-family:'Courier New', Courier, monospace;
+
+}
+span.adv {
+  background-color: rgba(100, 148, 237, 0.568);
+  border-radius: 2px;
+  border:2px solid rgb(100, 136, 237);
+
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  padding: 0.5em 5em;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+
+}
+form {
+  font-size: 1.2em;
+  font-family: monospace;
+}
+.fields {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+  flex-wrap: wrap;
+}
+input, select, textarea {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin: 1em 2em 1em 1em;
+}
+form label {
+  font-weight: bold;
+}
+input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  padding: 1em 1.5em;
+  border-color: #606060;
+  border-radius: 5px;
+  border-width: 2px;
+  font-weight: bold;
+} 
+.campo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p, th {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+}
+
+th {
+  font-family: monospace;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  
+}
+/* .results_cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
+.card {
+  max-width: 80%;
+  margin: 5px auto;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.icon {
+  display: flex;
+  max-width: 50px;  
+  flex-grow: 0;
+  flex-direction: column;
+  padding: 2em;
+}
+.icon img {
+  display: block;
+}
+
+.titulo h3 {
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.card p {
+  font-size: 1rem;
+  margin: 5px;
+
+}
+.card .datos, .card .comment {
+  width: 50%;
+  flex-grow: 1;
+  margin: 1em;
+}
+
+.card .comment {
+  padding-left: 2em;
+  border-left: 1px solid #222222;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .icon {
+    padding: 0.5em;
+  }
+  .card .datos, .card .comment {
+  width: 100%;
+  }
+  .card .comment {
+    border: none;
+    padding-left: 0;  
+  }
+}
